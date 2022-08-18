@@ -1,3 +1,4 @@
+package ThereWasAnAttempt;
 //Github implementation - I DIDN'T MAKE THIS XD
 import java.awt.image.BufferedImage;
 import java.util.Arrays;

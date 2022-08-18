@@ -1,3 +1,4 @@
+package ThereWasAnAttempt;
 import java.awt.image.*;
 import java.io.*;
 import javax.imageio.ImageIO;
@@ -17,7 +18,6 @@ public class Main extends CannyEdgeDetector {
             BufferedImage edges = detector.getEdgesImage();
         }
         catch (IOException e) {
-
         }
 
         
