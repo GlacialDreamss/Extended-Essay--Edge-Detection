@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # loading image
-img0 = cv2.imread('image.png',)
+img0 = cv2.imread('dataset/image0.png')
 
 # converting to gray scale
 gray = cv2.cvtColor(img0, cv2.COLOR_BGR2GRAY)
@@ -18,7 +18,7 @@ sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)  # y
 sobelxy = cv2.Sobel(img,cv2.CV_64F,1,1,ksize=5)  # xy
 
 	
-cv2.imwrite('Test_gray.jpg', sobelx) 
+cv2.imwrite('greyscale/image_gray.png', gray) 
 
 cv2.imshow('Sobel X', sobelx)
 cv2.waitKey(0)
