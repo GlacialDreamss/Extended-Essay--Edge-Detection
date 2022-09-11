@@ -1,6 +1,5 @@
 import numpy as np
 import cv2 
-from matplotlib import pyplot as plt
 
 # Sobel write
 def sobel(gray):
@@ -11,15 +10,15 @@ def sobel(gray):
 # Canny write
 def canny(gray):
     blur = cv2.GaussianBlur(gray,(3,3),0)
-    canny = cv2.Canny(blur,0,200)
+    canny = cv2.Canny(blur,0,50)
 
     cv2.imwrite('canny/image'+str(num)+".png", canny) 
 
 #Main loop
-for num in range(0,4):
+for num in range(0,100):
     
     # Universal variables
-    image = cv2.imread('dataset/image'+str(num)+'.png')
+    image = cv2.imread('dataset/image'+str(num)+'.pngt')
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     #Calling canny and sobel for the entire dataset
