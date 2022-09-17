@@ -23,6 +23,6 @@ csvWrite.writerow([str(dBytes),str(gBytes),str(sBytes),str(cBytes)]) # Total byt
 
 csvWrite.writerow([str(round(dBytes/(num+1))),str(round(gBytes/(num+1))),str(round(sBytes/(num+1))),str(round(cBytes/(num)+1))]) # Average bytes per test in a category
 
-csvWrite.writerow([str(round(cBpercent)),str(round(sBpercent)),str(round(gBpercent))]) # Percentage of bytes leftover per test relatvie to the original dataset
+csvWrite.writerow([str(round(cBpercent)),str(round(sBpercent)),str(round(gBpercent))]) # Percentage of bytes leftover per test relative to the original dataset
 
 file.close()
