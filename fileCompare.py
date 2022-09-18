@@ -10,10 +10,10 @@ cBytes = 0
 gBytes = 0 
 
 for num in range(0,100):
-    dBytes += os.stat('dataset/image'+str(num)+'.tiff').st_size
-    sBytes += os.stat('sobel/image'+str(num)+'.tiff').st_size
-    cBytes += os.stat('canny/image'+str(num)+'.tiff').st_size
-    gBytes += os.stat('greyscale/image'+str(num)+'.tiff').st_size
+    dBytes += os.stat('dataset/image'+str(num)+'.png').st_size
+    sBytes += os.stat('sobel/image'+str(num)+'.png').st_size
+    cBytes += os.stat('canny/image'+str(num)+'.png').st_size
+    gBytes += os.stat('greyscale/image'+str(num)+'.png').st_size
 
 cBpercent = (cBytes/dBytes)*100
 sBpercent = (sBytes/dBytes)*100
