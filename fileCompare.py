@@ -9,7 +9,7 @@ sBytes = 0
 cBytes = 0
 gBytes = 0 
 
-for num in range(0,100):
+for num in range(0,4):
     dBytes += os.stat('dataset/image'+str(num)+'.png').st_size
     sBytes += os.stat('sobel/image'+str(num)+'.png').st_size
     cBytes += os.stat('canny/image'+str(num)+'.png').st_size

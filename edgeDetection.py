@@ -22,8 +22,8 @@ for num in range(0,100):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
     #Calling canny and sobel for the entire dataset
-    sobel(gray)
-    canny(gray)
+    sobel(image)
+    canny(image)
 
     #Writing grayscale
     cv2.imwrite('greyscale/image'+str(num)+'.png', gray)
