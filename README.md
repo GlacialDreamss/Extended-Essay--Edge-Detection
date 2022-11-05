@@ -12,9 +12,9 @@
  - The following are how to collate the data from your own results
  1. In fileCompare.py, for lines 13 to 16, change the ".png" to your desired extension
  2. Run fileCompare.py, the results will be stored in byteAverage.csv as the following:
-    Row 1: Total Dataset bytes, Total Greyscale bytes, Total Sobel bytes, Total Canny bytes
-    Row 2: Average Dataset bytes, Average Greyscale bytes, Average Sobel bytes, Average Canny bytes
-    Row 3 (percentage of dataset left over for each category): Residual Canny bytes, Residual Sobel bytes, Residual greyscale bytes 
+    - Row 1: Total Dataset bytes, Total Greyscale bytes, Total Sobel bytes, Total Canny bytes
+    - Row 2: Average Dataset bytes, Average Greyscale bytes, Average Sobel bytes, Average Canny bytes
+    - Row 3 (percentage of dataset left over for each category): Residual Canny bytes, Residual Sobel bytes, Residual greyscale bytes 
  
 
  Note - if you want coloured sobel results, like those in the sobel folder, change the "gray" on line 25 to "image".
