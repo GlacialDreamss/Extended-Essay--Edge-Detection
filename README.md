@@ -7,7 +7,7 @@
  - Generating results based on a dataset (see folders for examples)
  1. Rename your dataset to image(number).(extension) in increasing order from 0 and store it in the dataset folder
  2. In edgeDetection.py, for each line that contains the word image, change the file extension from .png to your desired one
- 3. Run edgeDetection.py and your results should be stored in the other folders
+ 3. Run edgeDetection.py and your results should be stored in the other folders (the error is based on range, if you hate errors :p change the for loop range for the main loop)
  
  - The following are how to collate the data from your own results
  1. In fileCompare.py, for lines 13 to 16, change the ".png" to your desired extension
