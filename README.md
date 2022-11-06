@@ -18,5 +18,5 @@
     - Row 3 (percentage of dataset left over for each category): Residual Canny bytes, Residual Sobel bytes, Residual greyscale bytes 
  
 
- Note - if you don't want coloured sobel results, like those in the sobel folder, change the "image" on line 25 of edgeDetection.py to "gray".
+ Note - if you don't want coloured sobel results, like those in the sobel folder, change the "rgb" on line 25 of edgeDetection.py to "greyscale".
 
