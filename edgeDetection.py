@@ -13,7 +13,7 @@ def sobel(image):
 
 # Canny write
 def canny(image):
-    blur = cv2.GaussianBlur(image,(3,3),0) 
+    blur = cv2.GaussianBlur(image,(3,3),0) #No I didn't forget to make the blur 5x5 as I implied I would for the entire experiment and am not now salty smh
     canny = cv2.Canny(blur,0,50)
 
     cv2.imwrite('gaussian blur/image'+str(num)+".png", blur)
