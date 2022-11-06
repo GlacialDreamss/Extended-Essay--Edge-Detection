@@ -4,8 +4,13 @@ import cv2
 # Sobel write
 def sobel(gray):
     sobel = cv2.Sobel(gray,cv2.CV_64F,1,1,ksize=5)  # x,y: 1,1
+    sobelx = cv2.Sobel(gray,cv2.CV_64F,1,0,ksize=5)  # x,y: 1,0
+    sobely = cv2.Sobel(gray,cv2.CV_64F,0,1,ksize=5)  # x,y: 0,1
+    
+    cv2.imwrite('sobel/image'+str(num)+".png", sobel)
+    cv2.imwrite('sobelX/image'+str(num)+".png", sobelx)
+    cv2.imwrite('sobelY/image'+str(num)+".png", sobely)
 
-    cv2.imwrite('sobel/image'+str(num)+".png", sobel) 
 
 # Canny write
 def canny(gray):
